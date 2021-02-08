@@ -1,0 +1,181 @@
+/* 1. definir ESTILO GENERAL*/
+/* para cubrir cualquier "vacío" no contemplado en las queries */
+/* SI no se define este estilo general, en los casos no contemplados por las media queries, NO SE APLICARÍA NINGÚN ESTILO */
+/* As hex codes */
+/*http://paletton.com/#uid=23I0u0kbRt14+E48dwffUpTkImm*/
+/* As hex codes */
+
+.color-primary-0 {
+  color: #66789a;
+} /* Main Primary color  Azules*/
+.color-primary-1 {
+  color: #a7b0c2;
+}
+.color-primary-2 {
+  color: #8391aa;
+}
+.color-primary-3 {
+  color: #4c6189;
+}
+.color-primary-4 {
+  color: #314a76;
+}
+
+.color-complement-0 {
+  color: #e7c992;
+} /* Main Complement color Beig*/
+.color-complement-1 {
+  color: #fff1d7;
+}
+.color-complement-2 {
+  color: #ffe8be;
+}
+.color-complement-3 {
+  color: #ceaa68;
+}
+.color-complement-4 {
+  color: #b28a3f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0 auto;
+  background-color: #314a76;
+  color: #fff;
+  min-width: 300px;
+  height: 100vh; /* se fija un alto en la pagina con viewport tambien podria ser 100%*/
+  min-height: 250px; /* se fija un minimo de la pagina*/
+  display: flex;
+  flex-direction: column;
+  padding: 8px 6px;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  height: 20%;
+  min-height: 55px;
+  background-color: #a7b0c2;
+}
+header img {
+  height: 90%;
+}
+div {
+  text-align: center;
+}
+main {
+  margin: 3px 0;
+  flex-grow: 1; /* adaptative */
+  background-color: #fff;
+  color: #314a76;
+}
+main h2:first-child {
+  color: red;
+}
+h2 {
+  font-size: 1.5em;
+}
+footer {
+  height: 10%;
+  min-height: 30px;
+  background-color: #ceaa68;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*****************media query***********************/
+/*@media (min-width: 300px) {
+  body {
+    background-color: #ceaa68;
+    color: #131416;
+  }
+  header img {
+    height: 40%;
+  }
+  header div {
+    height: 55%;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: #314a76;
+    color: #0f0f0fc2;
+  }
+
+  main {
+    background-color: #66789a;
+  }
+}
+@media (min-width: 1000px) and (orientation: landscape) {
+  header {
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 30%;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #2e8541;
+    color: #0f0f0fc2;
+  }
+  main {
+    background-color: #97cea3;
+  }
+}*/
+@media (min-width: 300px) {
+  body {
+    background-color: #ceaa68;
+    color: #131416;
+  }
+  header img {
+    height: 40%;
+  }
+  header div {
+    height: 55%;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: #314a76;
+    color: #0f0f0fc2;
+  }
+
+  main {
+    background-color: #66789a;
+  }
+}
+@media (min-width: 1000px) and (orientation: landscape) {
+  header {
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 30%;
+    padding: 0 10px;
+  }
+  header img {
+    height: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #2e8541;
+    color: #0f0f0fc2;
+  }
+  main {
+    background-color: #97cea3;
+  }
+}
